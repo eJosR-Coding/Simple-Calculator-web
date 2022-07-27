@@ -1,0 +1,146 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #000000, #149414);
+}
+.reloj{
+    text-align: center;
+    color: #149414;
+    width: 300px;
+    background-color: black;
+    font-family: monospace;
+}
+.calculadora-je{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    margin: 40px;
+}
+
+.calculadora-je button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+    transition:all .2s ease-in-out;
+}
+
+.out{
+    grid-column: 1/-1;
+    background-color: rgba(0,0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 2px solid;
+}
+
+.out .display{
+    color: black;
+    font-size: 1.85rem;
+    text-align: right;
+    border: 1px solid;
+}
+.calculadora-je button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.2);
+}
+footer{
+    color: white;
+    background-color: black;
+}
+footer p{
+    text-align: center;
+}
+.icons{
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+#github{
+    margin: 10px;
+}
+#linkedin{
+    margin: 10px;
+}
+#github:hover{
+    color: purple;
+    background-color: black;
+    cursor: pointer;
+    transform: scale(1.3);
+    transition:all .3s ease-in-out;
+}
+#linkedin:hover{
+    color: #0077b5;
+    background-color: black;
+    cursor: pointer;
+    transform: scale(1.3);
+    transition:all .3s ease-in-out;
+}
+.spa1{
+    margin: 30px;
+    color: #149414;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    white-space: nowrap;
+    width: 18ch;
+    
+    animation: typing 2s steps(18), .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0;}
+}
+
+
+.spa2{
+    margin: 30px;
+    color: #149414;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 18ch;
+    
+    animation: typing 4s steps(18), blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0;}
+}
+@keyframes blink{
+    50%{ border-color: transparent;}
+}
+h1{
+    text-align: center;
+    text-align: center;
+    color: #149414;
+}
+.title{
+    margin: 30px;
+    color: #149414;
+    font-family: monospace;
+    border-right: 4px solid;
+    animation: blink .5s infinite step-end alternate;
+}
+#cajatit{
+    background-color: black;
+    width:fit-content;
+}
+
+/*Calculadora quaker terminal style*/
